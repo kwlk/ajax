@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(104, 145, 162);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.container .table-wrap {
+    overflow-x: auto;
+    /*width: 80%;*/
+}
+
+.container .table-wrap::-webkit-scrollbar {
+    height: 5px;
+}
+
+.container .table-wrap::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(104, 145, 162);
+}
+
+.title-table {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.table>:not(caption)>*>* {
+    padding: 2rem 0.5rem;
+}
+
+.table {
+    position: relative;
+    display: inline-table;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.table tbody,
+.table thead {
+    background-color: #fff;
+}
+
+.table tbody tr td:nth-of-type(1) {
+    text-align: center;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.table tbody tr td:nth-of-type(2) {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+
+.table tbody tr td:nth-of-type(3) {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.table tbody tr td:nth-of-type(4) {
+    text-align: center;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.table tbody tr td:nth-of-type(5) {
+    text-align: center;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.table tbody tr .deletebtn {
+    text-align: center;
+    margin:auto;
+}
+
+.table tbody tr {
+    box-shadow: 0px 2px 3px #1f1f1f1a;
+}
+
+.table thead tr {
+    text-align: center;
+    border-bottom: 4px solid #0C6121FF;
+}
+
+.table tbody td .active,
+.table tbody td .waiting {
+    background-color: #B9F6CA;
+    color: #388E3C;
+    font-weight: 600;
+    padding: 1px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.table tbody td .waiting {
+    background-color: #FFECB3;
+    color: #FFA000;
+}
+
+.table tbody td .active .circle,
+.table tbody td .waiting .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #388E3C;
+}
+
+.table tbody td .waiting .circle {
+    background-color: #FFA000;
+}
+
+.table tbody td .fa-times {
+    color: #D32F2F;
+    font-size: 0.9rem;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fs-09 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.text-grey {
+    color: #a8a8a8 !important;
+}
+
+.btn-info {
+    background-color: #0C6121FF !important;
+}
+
+
+@media(min-width: 992px) {
+    .container .table-wrap {
+        overflow: hidden;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
